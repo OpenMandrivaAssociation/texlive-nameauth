@@ -1,11 +1,11 @@
-# revision 24993
+# revision 25244
 # category Package
 # catalog-ctan /macros/latex/contrib/nameauth
-# catalog-date 2012-01-01 00:42:20 +0100
+# catalog-date 2012-01-20 13:06:48 +0100
 # catalog-license lppl1.3
-# catalog-version 0.7
+# catalog-version 0.75
 Name:		texlive-nameauth
-Version:	0.7
+Version:	0.75
 Release:	1
 Summary:	Name authority mechanism for consistency in body text and index
 Group:		Publishing
@@ -38,6 +38,7 @@ minimize writing and production time and cost.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/nameauth/nameauth.sty
+%doc %{_texmfdistdir}/doc/latex/nameauth/Makefile
 %doc %{_texmfdistdir}/doc/latex/nameauth/README
 %doc %{_texmfdistdir}/doc/latex/nameauth/nameauth.pdf
 #- source
