@@ -1,13 +1,13 @@
 Name:		texlive-nameauth
-Version:	3.2
-Release:	2
+Version:	58026
+Release:	1
 Summary:	Name authority mechanism for consistency in body text and index
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nameauth
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nameauth.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nameauth.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nameauth.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nameauth.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nameauth.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nameauth.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +22,12 @@ forms, and pen names in the text and index. This may help
 minimize writing and production time and cost.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,7 +38,8 @@ minimize writing and production time and cost.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
