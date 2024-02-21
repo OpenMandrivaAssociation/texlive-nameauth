@@ -1,6 +1,6 @@
 Name:		texlive-nameauth
-Version:	65738
-Release:	2
+Version:	69758
+Release:	1
 Summary:	Name authority mechanism for consistency in body text and index
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nameauth
