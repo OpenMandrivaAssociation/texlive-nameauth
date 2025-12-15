@@ -1,5 +1,5 @@
 Name:		texlive-nameauth
-Version:	73749
+Version:	76172
 Release:	1
 Summary:	Name authority mechanism for consistency in body text and index
 Group:		Publishing
